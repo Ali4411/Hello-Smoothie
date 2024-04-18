@@ -1,0 +1,402 @@
+<!--Page Completed by Le Wen-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Smoothie</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><i class="bi bi-cup-straw h4"></i>Hello Smoothie</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./subscribe.html"
+                >Subscribe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./how-it-works.html">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./game.html">Smoothie game</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Title-->
+    <div class="title">
+      <img src="./images/avocado_smoothie.jpg" alt="avocado smoothie" />
+      <div>
+        <h1>How it works</h1>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <section id="steps">
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Three simple steps!</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./images/menu.jpg" alt="menu" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">1. Choose Your Smoothies</h3>
+            <p>
+              Each week, you'll get our unique menu of smoothie recipes tailored
+              specifically to your package. Whether you're embracing the vibrant flavors of our
+              Classic blends, fueling your day with our Protein Rich options, or
+              savoring the plant-powered goodness of our Vegan creations, we've got you
+              covered..
+            </p>
+            <p>
+              Pick your top seven smoothies for the week, creating a menu that's
+              as unique as you are. With Hello Smoothie, it's all about you - your
+              favorites, your way!
+            </p>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./images/delivery.jpg" alt="delivery" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">2. Receive Your Delivery</h3>
+            <p>
+              Exciting news! Your custom smoothie kit is on its way, packed with
+              all the fresh ingredients you need for a week of delicious blends.
+            </p>
+            <p>
+              Each ingredient is carefully portioned and packed to ensure
+              maximum freshness when it arrives at your doorstep.
+            </p>
+            <p>
+              Get ready to unpack your kit and dive into a world of smoothie
+              delight — fresh, flavorful, nutritious and ready to blend!
+            </p>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./images/smoothie prep.jpg" alt="smoothie prep" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">3. Blend and Enjoy!</h3>
+            <p>
+              The moment you've been waiting for! When your smoothie kit
+              arrives, unpack your ingredients and follow the easy-peasy
+              instructions included in your kit.
+            </p>
+            <p>
+              Add the pre-portioned ingredients to your blender, along with any
+              additional liquid or optional add-ins specified in the recipe.
+            </p>
+            <p>
+              Blend until smooth, pour into your favorite glass, and sip away,
+              enjoying the fresh flavors and wholesome goodness of your homemade
+              smoothie creation!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- packages -->
+    <section id="packages">
+      <div class="container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h2 class="display-4 fw-normal">Our Packages</h2>
+          <p class="fs-5 text-body-secondary">
+            Find the perfect fit for your smoothie preferences.
+          </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Vegan Package</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $25.99<small class="text-body-secondary fw-light"
+                    >/week</small
+                  >
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    Indulge in our Vegan Package and discover a world of
+                    plant-based goodness! Packed with fresh fruits, vegetables,
+                    and plant-based proteins, these smoothies are perfect for
+                    those following a vegan lifestyle or simply looking to add
+                    more plant-powered nutrition to their diet.
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-dark">
+                  <a class="nav-link" href="./subscribe.html">Subscribe</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Classic Package</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $25.99<small class="text-body-secondary fw-light"
+                    >/week</small
+                  >
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    Experience the timeless flavors of our Classic Package!
+                    Bursting with the vibrant colors and delicious tastes of
+                    nature's bounty, these smoothies are a delightful blend of
+                    fruits, vegetables, and wholesome ingredients. Perfect for
+                    anyone looking for a refreshing and nutritious pick-me-up.
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-warning">
+                  <a class="nav-link" href="./subscribe.html">Get started</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-warning">
+              <div class="card-header py-3 text-bg-warning border-warning">
+                <h4 class="my-0 fw-normal">Protein Rich Package</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $35.99<small class="text-body-secondary fw-light"
+                    >/week</small
+                  >
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    Power up your day with our Protein Rich Package! Designed to
+                    fuel your body and satisfy your cravings, these smoothies
+                    are packed with protein rich ingredients like nuts, seeds,
+                    and plant-based protein sources. Ideal for fitness
+                    enthusiasts, athletes, or anyone seeking an energizing
+                    smoothie option.
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-warning">
+                  <a class="nav-link" href="./subscribe.html">Go! Go! Go!</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section id="gallery">
+      <div class="container">
+        <h2 class="pb-2">Smoothie Gallery</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/avocado_smoothie.jpg"
+                class="d-block w-100"
+                alt="avocado_smoothie"
+              />
+              <div class="overlay">Go-Green Protein Smoothie</div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/banana_smoothie.jpg"
+                class="d-block w-100"
+                alt="banana_smoothie"
+              />
+              <div class="overlay">Vanilla Banana Date Smoothie</div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/berry_sunrise.jpg"
+                class="d-block w-100"
+                alt="berry_smoothie"
+              />
+              <div class="overlay">Berry Sunrise Smoothie</div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/tropical_smoothie.jpg"
+                class="d-block w-100"
+                alt="tropical_smoothie"
+              />
+              <div class="overlay">Tropical Breeze Smoothie</div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="container footer">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <p class="col-md-4 mb-0 text-body-secondary">
+            © 2024 Hello Smoothie, Inc
+          </p>
+
+          <a
+            href="./index.html"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <img src="./images/cup-straw.svg" height="20" alt="cup straw" />
+            Hello Smoothie
+          </a>
+
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link px-2 text-body-secondary"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./subscribe.html"
+                class="nav-link px-2 text-body-secondary"
+                >Subscribe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./how-it-works.html"
+                class="nav-link px-2 text-body-secondary"
+                >How It Works</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./game.html" class="nav-link px-2 text-body-secondary"
+                >Smoothie Game</a
+              >
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery script -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- javascript file-->
+    <script defer src="javascript/howitworks.js"></script>
+  </body>
+</html>
