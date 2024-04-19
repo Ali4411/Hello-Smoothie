@@ -36,12 +36,25 @@ img {
   font-style: normal;
 }
 
+@media (max-width: 950px) {
+  .title h1 {
+    font-size: 10vw;
+    width:max-content;
+  }
+}
+
 .title p {
-  font-size: 6vw;
+  font-size: 7vw;
   font-family: "Sacramento", cursive;
   font-weight: 900;
   font-style: normal;
   color: #9bcf53;
+}
+
+@media (max-width: 950px) {
+  .title p {
+    font-size: 8vw;
+  }
 }
 
 
