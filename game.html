@@ -59,10 +59,7 @@
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="./subscribe.html"
+              <a class="nav-link" aria-current="page" href="./subscribe.html"
                 >Subscribe</a
               >
             </li>
@@ -87,39 +84,42 @@
 
     <!--game-section-->
     <section id="game-section">
-        <div class="container col-xxl-7 px-3 py-3">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
-                <h2 class="display-5 fw-bold lh-1 mb-3">
-                Guess the smoothie!
-                </h2>
-                <div class="game">
-                  <p class="lead">
-                  There are 4 different smoothies, you have to guess which it is.
-                  To help you guess, a small clue is given. It's simple!<br><br>
-                  The choices are...
-                  </p>
-                  <dl>
-                      <dt>Go Green Protein</dt>
-                          <dd>A delicious protein packed smoothie great for after the gym</dd>
-                      <dt>Vanilla Banana Date</dt>
-                          <dd>A smooth and sweet treat, perfect any time of the day</dd>
-                      <dt>Berry Sunrise</dt>
-                          <dd>Vibrant and sweet, a perfect to start your day</dd>
-                      <dt>Tropical Breeze</dt>
-                          <dd>Containing pineapple and mango, this smoothie is paradise in a glass</dd>
-                  </dl> 
-                  <div id="game2">
-                    <h4>Click start to begin</h4>
-                    <button onclick="generateRandom()">Start</button>
-                    <p id="clues"></p>
-                    <input type="text" id="guess">
-                    <button onclick="checkGuess()">Submit</button>
-                    <br><br>
-                    <p id="result"></p>
-                  </div>
-                </div>
-            </div>   
-        </div> 
+      <div class="container col-xxl-7 px-3 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <h2 class="display-5 fw-bold lh-1 mb-3">Guess the smoothie!</h2>
+          <div class="game">
+            <p class="lead">
+              There are 4 different smoothies, you have to guess which it is. To
+              help you guess, a small clue is given. It's simple!<br /><br />
+              The choices are...
+            </p>
+            <dl>
+              <dt>Go Green Protein</dt>
+              <dd>
+                A delicious protein packed smoothie great for after the gym
+              </dd>
+              <dt>Vanilla Banana Date</dt>
+              <dd>A smooth and sweet treat, perfect any time of the day</dd>
+              <dt>Berry Sunrise</dt>
+              <dd>Vibrant and sweet, a perfect to start your day</dd>
+              <dt>Tropical Breeze</dt>
+              <dd>
+                Containing pineapple and mango, this smoothie is paradise in a
+                glass
+              </dd>
+            </dl>
+            <div id="game2">
+              <h4>Click start to begin</h4>
+              <button onclick="generateRandom()">Start</button>
+              <p id="clues"></p>
+              <input type="text" id="guess" />
+              <button onclick="checkGuess()">Submit</button>
+              <br /><br />
+              <p id="result"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script>
@@ -128,69 +128,88 @@
       var randomSmoothie;
       // function to generate a random smoothie and matching clue
       function generateRandom() {
-        var clues = ['This smoothie will POWER up your day', 'A sweet and creamy smoothie with a hint of warmth',
-                    'Kick start your day with this smoothie', 'Guaranteed to transport you to a beach with one sip'];
-        var smoothies = ['Go Green Protein', 'Vanilla Banana Date', 'Berry Sunrise', 'Tropical Breeze'];
-        var randomNumber = Math.floor(Math.random()*smoothies.length);
+        var clues = [
+          "This smoothie will POWER up your day",
+          "A sweet and creamy smoothie with a hint of warmth",
+          "Kick start your day with this smoothie",
+          "Guaranteed to transport you to a beach with one sip",
+        ];
+        var smoothies = [
+          "Go Green Protein",
+          "Vanilla Banana Date",
+          "Berry Sunrise",
+          "Tropical Breeze",
+        ];
+        var randomNumber = Math.floor(Math.random() * smoothies.length);
         randomSmoothie = smoothies[randomNumber];
         randomClue = clues[randomNumber];
-      // display clue
-        document.getElementById('clues').innerHTML = 'Clue: ' + randomClue;
+        // display clue
+        document.getElementById("clues").innerHTML = "Clue: " + randomClue;
       }
       // function to check the user guess
       function checkGuess() {
-        var userGuess = document.getElementById('guess').value;
+        var userGuess = document.getElementById("guess").value;
 
         if (userGuess.toLowerCase() === randomSmoothie.toLowerCase()) {
-          document.getElementById('result').innerHTML = 'Well done, you guessed the correct smoothie! To view our packages see <a href="./how-it-works.html">Here</a>' 
+          document.getElementById("result").innerHTML =
+            'Well done, you guessed the correct smoothie! To view our packages see <a href="./how-it-works.html">Here</a>';
         } else {
-              document.getElementById('result').innerHTML = 'Sorry, incorrect. The correct smoothie was ' + randomSmoothie + '.';
+          document.getElementById("result").innerHTML =
+            "Sorry, incorrect. The correct smoothie was " +
+            randomSmoothie +
+            ".";
         }
       }
     </script>
 
     <!--Footer-->
     <div class="container footer">
-        <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          © 2024 Hello Smoothie, Inc
+        </p>
+
+        <a
+          href="./index.html"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
-          <p class="col-md-4 mb-0 text-body-secondary">
-            © 2024 Hello Smoothie, Inc
-          </p>
-  
-          <a
-            href="./index.html"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <img src="./images/cup-straw.svg" height="20" alt="cup straw" /> Hello
-            Smoothie
-          </a>
-  
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link px-2 text-body-secondary"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./subscribe.html" class="nav-link px-2 text-body-secondary"
-                >Subscribe</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="./how-it-works.html"
-                class="nav-link px-2 text-body-secondary"
-                >How It Works</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./game.html" class="nav-link px-2 text-body-secondary"
-                >Smoothie Game</a
-              >
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </body>
-  </html>
+          <img src="./images/cup-straw.svg" height="20" alt="cup straw" /> Hello
+          Smoothie
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link px-2 text-body-secondary"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./subscribe.html" class="nav-link px-2 text-body-secondary"
+              >Subscribe</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./how-it-works.html"
+              class="nav-link px-2 text-body-secondary"
+              >How It Works</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./game.html" class="nav-link px-2 text-body-secondary"
+              >Smoothie Game</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

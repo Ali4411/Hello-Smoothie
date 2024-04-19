@@ -12,6 +12,7 @@ img {
 .title {
   position: relative;
   text-align: center;
+  margin-top: 50px;
 }
 
 .title > div {
@@ -43,10 +44,7 @@ img {
   color: #9bcf53;
 }
 
-/*section1*/
-#section1 {
-  margin: 50px 0;
-}
+
 #section1 h2 {
   color: #416d19;
   font-family: "Montserrat", sans-serif;
